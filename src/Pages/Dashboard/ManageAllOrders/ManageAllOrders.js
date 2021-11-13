@@ -5,7 +5,7 @@ const ManageAllOrders = () => {
     const [allOrders, setAllOrders] = useState([]);
 
     useEffect(() => {
-        fetch('https://dreamnest-de855.web.app/buyapartments')
+        fetch('https://polar-plains-82762.herokuapp.com/buyapartments')
             .then(res => res.json())
             .then(data => {
                 setAllOrders(data)

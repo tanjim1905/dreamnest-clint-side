@@ -5,7 +5,7 @@ const ManageAllApartments = () => {
     const [manageAllApartments, setManageAllApartments] = useState([]);
 
     useEffect(() => {
-        fetch('https://dreamnest-de855.web.app/apartments')
+        fetch('https://polar-plains-82762.herokuapp.com/apartments')
             .then(res => res.json())
             .then(data => setManageAllApartments(data));
     }, [])

@@ -4,7 +4,7 @@ import Apartment from './Apartment/Apartment';
 const Apartments = () => {
     const [apartments, setApartments] = useState([]);
     useEffect(() => {
-        fetch('https://dreamnest-de855.web.app/apartments')
+        fetch('https://polar-plains-82762.herokuapp.com/apartments')
             .then(res => res.json())
             .then(data => setApartments(data));
     }, []);

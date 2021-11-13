@@ -20,7 +20,7 @@ const CustomarReview = () => {
             user
         }
 
-        fetch('https://dreamnest-de855.web.app/customarreview', {
+        fetch('https://polar-plains-82762.herokuapp.com/customarreview', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(customarReviewInfo)

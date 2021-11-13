@@ -8,7 +8,7 @@ const ManageSingleApartment = (props) => {
         const proceed = window.confirm('Are you sure? You want to delete this?');
 
         if (proceed) {
-            const url = `https://dreamnest-de855.web.app/apartments/${id}`
+            const url = `https://polar-plains-82762.herokuapp.com/apartments/${id}`
             fetch(url, {
                 method: 'DELETE'
             })

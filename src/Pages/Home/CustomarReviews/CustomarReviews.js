@@ -4,7 +4,7 @@ import SingleReview from './SingleReview/SingleReview';
 const CustomarReviews = () => {
     const [customarReviews, setCustomarReviews] = useState([]);
     useEffect(() => {
-        fetch('https://dreamnest-de855.web.app/customarreview')
+        fetch('https://polar-plains-82762.herokuapp.com/customarreview')
         .then(res => res.json())
         .then(data => setCustomarReviews(data))
     }, [])

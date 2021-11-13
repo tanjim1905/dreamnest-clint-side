@@ -14,7 +14,7 @@ const MakeAdmin = () => {
         const user = { email };
         console.log(user);
 
-        fetch('https://dreamnest-de855.web.app/users/makeadmin', {
+        fetch('https://polar-plains-82762.herokuapp.com/users/makeadmin', {
             method: 'PUT',
             headers: {
                 'authorization': `Bearer ${token}`,

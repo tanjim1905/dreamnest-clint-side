@@ -20,7 +20,7 @@ const BuyApartment = () => {
     }
 
     useEffect(() => {
-        fetch(`https://dreamnest-de855.web.app/singleapartment/${apartmentId}`)
+        fetch(`https://polar-plains-82762.herokuapp.com/singleapartment/${apartmentId}`)
             .then(res => res.json())
             .then(data => setSingleApartment(data));
     }, []);
@@ -31,7 +31,7 @@ const BuyApartment = () => {
             singleApartment,
         }
 
-        fetch('https://dreamnest-de855.web.app/buyapartments', {
+        fetch('https://polar-plains-82762.herokuapp.com/buyapartments', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(buyApartment)

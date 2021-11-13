@@ -109,7 +109,7 @@ const useFirebase = () => {
 
     // admin
     useEffect(() => {
-        fetch(`https://dreamnest-de855.web.app/users/${user.email}`)
+        fetch(`https://polar-plains-82762.herokuapp.com/users/${user.email}`)
         .then(res => res.json())
         .then(data => setAdmin(data.admin))
     }, [user.email])
@@ -128,7 +128,7 @@ const useFirebase = () => {
     const saveUser = (email, displayName, method) => {
         const user = {email, displayName};
 
-        fetch('https://dreamnest-de855.web.app/users', {
+        fetch('https://polar-plains-82762.herokuapp.com/users', {
             method: method,
             headers: {'content-type': 'application/json'},
             body: JSON.stringify(user)

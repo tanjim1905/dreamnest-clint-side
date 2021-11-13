@@ -16,7 +16,7 @@ const AddApartment = () => {
             ...addApartment
         }
 
-        fetch('https://dreamnest-de855.web.app/apartments', {
+        fetch('https://polar-plains-82762.herokuapp.com/apartments', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(addAApartment)

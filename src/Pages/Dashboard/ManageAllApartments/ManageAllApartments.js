@@ -5,7 +5,7 @@ const ManageAllApartments = () => {
     const [manageAllApartments, setManageAllApartments] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:7000/apartments')
+        fetch('https://dreamnest-de855.web.app/apartments')
             .then(res => res.json())
             .then(data => setManageAllApartments(data));
     }, [])

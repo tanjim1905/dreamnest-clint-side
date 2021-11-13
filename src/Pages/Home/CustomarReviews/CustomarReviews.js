@@ -4,7 +4,7 @@ import SingleReview from './SingleReview/SingleReview';
 const CustomarReviews = () => {
     const [customarReviews, setCustomarReviews] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:7000/customarreview')
+        fetch('https://dreamnest-de855.web.app/customarreview')
         .then(res => res.json())
         .then(data => setCustomarReviews(data))
     }, [])

@@ -109,7 +109,7 @@ const useFirebase = () => {
 
     // admin
     useEffect(() => {
-        fetch(`http://localhost:7000/users/${user.email}`)
+        fetch(`https://dreamnest-de855.web.app/users/${user.email}`)
         .then(res => res.json())
         .then(data => setAdmin(data.admin))
     }, [user.email])
@@ -128,7 +128,7 @@ const useFirebase = () => {
     const saveUser = (email, displayName, method) => {
         const user = {email, displayName};
 
-        fetch('http://localhost:7000/users', {
+        fetch('https://dreamnest-de855.web.app/users', {
             method: method,
             headers: {'content-type': 'application/json'},
             body: JSON.stringify(user)

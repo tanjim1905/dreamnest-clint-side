@@ -5,7 +5,7 @@ const ManageAllOrders = () => {
     const [allOrders, setAllOrders] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:7000/buyapartments')
+        fetch('https://dreamnest-de855.web.app/buyapartments')
             .then(res => res.json())
             .then(data => {
                 setAllOrders(data)

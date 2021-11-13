@@ -9,7 +9,7 @@ const MyOrders = () => {
         const proceed = window.confirm('Are you sure? You want to delete this?');
 
         if (proceed) {
-            const url = `http://localhost:7000/buyapartments/myorders/${id}`
+            const url = `https://dreamnest-de855.web.app/buyapartments/myorders/${id}`
             fetch(url, {
                 method: 'DELETE'
             })
@@ -22,7 +22,7 @@ const MyOrders = () => {
         }
     }
     useEffect(() => {
-        const url = `http://localhost:7000/buyapartments/myorders?email=${user.email}`;
+        const url = `https://dreamnest-de855.web.app/buyapartments/myorders?email=${user.email}`;
         fetch(url)
             .then(res => res.json())
             .then(data => {

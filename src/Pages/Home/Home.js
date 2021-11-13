@@ -7,7 +7,7 @@ import Team from './Teams/Team';
 const Home = () => {
     const [apartments, setApartments] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:7000/apartments')
+        fetch('https://dreamnest-de855.web.app/apartments')
             .then(res => res.json())
             .then(data => setApartments(data));
     }, []);

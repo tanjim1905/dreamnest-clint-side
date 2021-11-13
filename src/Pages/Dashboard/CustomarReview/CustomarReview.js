@@ -20,7 +20,7 @@ const CustomarReview = () => {
             user
         }
 
-        fetch('http://localhost:7000/customarreview', {
+        fetch('https://dreamnest-de855.web.app/customarreview', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(customarReviewInfo)

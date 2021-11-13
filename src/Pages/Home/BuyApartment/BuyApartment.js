@@ -20,7 +20,7 @@ const BuyApartment = () => {
     }
 
     useEffect(() => {
-        fetch(`http://localhost:7000/singleapartment/${apartmentId}`)
+        fetch(`https://dreamnest-de855.web.app/singleapartment/${apartmentId}`)
             .then(res => res.json())
             .then(data => setSingleApartment(data));
     }, []);
@@ -31,7 +31,7 @@ const BuyApartment = () => {
             singleApartment,
         }
 
-        fetch('http://localhost:7000/buyapartments', {
+        fetch('https://dreamnest-de855.web.app/buyapartments', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(buyApartment)

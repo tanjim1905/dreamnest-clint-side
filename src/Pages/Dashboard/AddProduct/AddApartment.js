@@ -16,7 +16,7 @@ const AddApartment = () => {
             ...addApartment
         }
 
-        fetch('http://localhost:7000/apartments', {
+        fetch('https://dreamnest-de855.web.app/apartments', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(addAApartment)

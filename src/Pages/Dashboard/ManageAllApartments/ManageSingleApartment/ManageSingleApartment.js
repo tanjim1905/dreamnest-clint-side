@@ -8,7 +8,7 @@ const ManageSingleApartment = (props) => {
         const proceed = window.confirm('Are you sure? You want to delete this?');
 
         if (proceed) {
-            const url = `http://localhost:7000/apartments/${id}`
+            const url = `https://dreamnest-de855.web.app/apartments/${id}`
             fetch(url, {
                 method: 'DELETE'
             })

@@ -14,7 +14,7 @@ const MakeAdmin = () => {
         const user = { email };
         console.log(user);
 
-        fetch('http://localhost:7000/users/makeadmin', {
+        fetch('https://dreamnest-de855.web.app/users/makeadmin', {
             method: 'PUT',
             headers: {
                 'authorization': `Bearer ${token}`,

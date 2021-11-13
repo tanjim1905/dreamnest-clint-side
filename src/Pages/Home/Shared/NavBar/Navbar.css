@@ -1,0 +1,26 @@
+.register-part button {
+    color: #000;
+    background-color: #0dcaf0;
+    border: 1px solid #ffc107;
+    font-weight: 600;
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .navbar-brand {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 0.75;
+  }
+  
+  .navbar {
+    box-shadow: 5px 5px 50px #a3a3a387 !important;
+  }
+  
+  #navbarNav ul li a {
+    font-weight: 700;
+  }
+  #navbarNav ul li a:hover {
+    color: #0dcaf0;
+  }

@@ -12,7 +12,7 @@ const ManageAllApartments = () => {
     return (
         <div>
             <div className="col py-3 container mt-2 mb-4">
-                <h2 className="text-center my-4">this is apartments</h2>
+                <h2 className="text-center my-4">All Apartments</h2>
                 <div className="row g-4">
                     {
                         manageAllApartments.map(manageAllApartment => <ManageSingleApartment

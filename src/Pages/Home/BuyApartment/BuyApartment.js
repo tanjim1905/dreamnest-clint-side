@@ -46,8 +46,8 @@ const BuyApartment = () => {
     }
     return (
         <>
-            <div className="container">
-                <h2>BuyApartment</h2>
+            <div className="container my-5">
+                <h2 className="text-center mb-4">BuyApartment</h2>
                 <div className="card mb-3" style={{ maxWidth: "100%" }}>
                     <div className="row g-0" >
                         <div className="col-md-4" >
@@ -56,6 +56,8 @@ const BuyApartment = () => {
                         <div className="col-md-8" >
                             <div className="card-body" >
                                 <h5 className="card-title" > {singleApartment?.title} </h5>
+                                <p className="card-text" >Price: <span className="fw-bold">{singleApartment?.price}</span></p>
+                                <p className="card-text" >Address: {singleApartment?.address}</p>
                                 <p className="card-text" >{singleApartment?.details}</p>
                             </div>
                         </div>
